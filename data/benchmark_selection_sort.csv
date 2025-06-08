@@ -1,0 +1,13 @@
+algoritmo,archivo,criterio,minimo,promedio,maximo
+Selection Sort,data/gastos_50.csv,fecha,5.6e-05,6.2e-05,8.1e-05
+Selection Sort,data/gastos_100.csv,fecha,0.000212,0.000217,0.000222
+Selection Sort,data/gastos_1000.csv,fecha,0.024136,0.024768,0.025321
+Selection Sort,data/gastos_50.csv,descripcion,6e-05,6.5e-05,7.5e-05
+Selection Sort,data/gastos_100.csv,descripcion,0.000222,0.000229,0.000235
+Selection Sort,data/gastos_1000.csv,descripcion,0.025899,0.027057,0.028129
+Selection Sort,data/gastos_50.csv,monto,4.5e-05,4.7e-05,5.2e-05
+Selection Sort,data/gastos_100.csv,monto,0.000173,0.000175,0.000178
+Selection Sort,data/gastos_1000.csv,monto,0.02116,0.021464,0.021911
+Selection Sort,data/gastos_50.csv,mes,5.5e-05,5.5e-05,5.7e-05
+Selection Sort,data/gastos_100.csv,mes,0.000211,0.000214,0.000217
+Selection Sort,data/gastos_1000.csv,mes,0.025456,0.025659,0.025945

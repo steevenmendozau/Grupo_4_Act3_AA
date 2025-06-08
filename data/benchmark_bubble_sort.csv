@@ -1,0 +1,13 @@
+algoritmo,archivo,criterio,minimo,promedio,maximo
+Bubble Sort,data/gastos_50.csv,fecha,6.2e-05,7.1e-05,0.000105
+Bubble Sort,data/gastos_100.csv,fecha,0.000236,0.000272,0.000414
+Bubble Sort,data/gastos_1000.csv,fecha,0.027682,0.031974,0.048683
+Bubble Sort,data/gastos_50.csv,descripcion,6e-05,7.1e-05,0.000109
+Bubble Sort,data/gastos_100.csv,descripcion,0.000232,0.000268,0.00041
+Bubble Sort,data/gastos_1000.csv,descripcion,0.026591,0.03121,0.049259
+Bubble Sort,data/gastos_50.csv,monto,4.8e-05,5.8e-05,9.9e-05
+Bubble Sort,data/gastos_100.csv,monto,0.000191,0.000229,0.00038
+Bubble Sort,data/gastos_1000.csv,monto,0.022705,0.027294,0.045278
+Bubble Sort,data/gastos_50.csv,mes,6.1e-05,7e-05,0.000107
+Bubble Sort,data/gastos_100.csv,mes,0.000231,0.00027,0.000415
+Bubble Sort,data/gastos_1000.csv,mes,0.027306,0.032222,0.049215

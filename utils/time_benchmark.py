@@ -1,12 +1,14 @@
 import timeit
 from sorting.bubble_sort import bubbleSort
-from sorting.selection_sort import selection_sort,cargar_gastos_csv
+from sorting.selection_sort import selection_sort, cargar_gastos_csv
 import pandas as pd
 import os
 
 def benchmark_selection_sort(clave):
     archivos = ['data/gastos_50.csv', 'data/gastos_100.csv', 'data/gastos_1000.csv']
     resultados = []
+    output_file = 'data/benchmark_selection_sort.csv'
+    debe_escribir_header = not os.path.exists(output_file)
 
     for archivo in archivos:
         try:
@@ -20,34 +22,24 @@ def benchmark_selection_sort(clave):
             selection_sort(copia, clave)
 
         tiempos = timeit.repeat(stmt=wrapper, repeat=5, number=1)
-        minimo = min(tiempos)
-        promedio = sum(tiempos)/len(tiempos)
-        maximo = max(tiempos)
-
         resultados.append({
-    'algoritmo': 'Selection Sort',
-    'archivo': archivo,
-    'criterio': clave,
-    'minimo': round(minimo, 6),
-    'promedio': round(promedio, 6),
-    'maximo': round(maximo, 6)
-})
+            'algoritmo': 'Selection Sort',
+            'archivo': archivo,
+            'criterio': clave,
+            'minimo': round(min(tiempos), 6),
+            'promedio': round(sum(tiempos) / len(tiempos), 6),
+            'maximo': round(max(tiempos), 6)
+        })
 
     df = pd.DataFrame(resultados)
-    output_file = 'data/benchmark_resultados.csv'
-
-    if os.path.exists(output_file):
-        df.to_csv(output_file, mode='a', header=False, index=False)
-    else:
-        df.to_csv(output_file, mode='w', header=True, index=False)
-
+    df.to_csv(output_file, mode='a', header=debe_escribir_header, index=False)
     return resultados
-
-
 
 def benchmark_bubble_sort(clave):
     archivos = ['data/gastos_50.csv', 'data/gastos_100.csv', 'data/gastos_1000.csv']
     resultados = []
+    output_file = 'data/benchmark_bubble_sort.csv'
+    debe_escribir_header = not os.path.exists(output_file)
 
     for archivo in archivos:
         try:
@@ -61,25 +53,15 @@ def benchmark_bubble_sort(clave):
             bubbleSort(copia, clave)
 
         tiempos = timeit.repeat(stmt=wrapper, repeat=5, number=1)
-        minimo = min(tiempos)
-        promedio = sum(tiempos)/len(tiempos)
-        maximo = max(tiempos)
-
         resultados.append({
-    'algoritmo': 'Bubble Sort',
-    'archivo': archivo,
-    'criterio': clave,
-    'minimo': round(minimo, 6),
-    'promedio': round(promedio, 6),
-    'maximo': round(maximo, 6)
-})
+            'algoritmo': 'Bubble Sort',
+            'archivo': archivo,
+            'criterio': clave,
+            'minimo': round(min(tiempos), 6),
+            'promedio': round(sum(tiempos) / len(tiempos), 6),
+            'maximo': round(max(tiempos), 6)
+        })
 
     df = pd.DataFrame(resultados)
-    output_file = 'data/benchmark_resultados.csv'
-
-    if os.path.exists(output_file):
-        df.to_csv(output_file, mode='a', header=False, index=False)
-    else:
-        df.to_csv(output_file, mode='w', header=True, index=False)
-
+    df.to_csv(output_file, mode='a', header=debe_escribir_header, index=False)
     return resultados
