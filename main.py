@@ -7,13 +7,13 @@ from utils.time_benchmark import benchmark_bubble_sort, benchmark_selection_sort
 # for gasto in gastos_ordenados[:10]:  # mostrar solo los primeros 10
 #     print(gasto)
 
-# benchmark_selection_sort('fecha')
-# benchmark_selection_sort('descripcion')
-# benchmark_selection_sort('monto')
-# benchmark_selection_sort('mes')   
+benchmark_selection_sort('fecha')
+benchmark_selection_sort('descripcion')
+benchmark_selection_sort('monto')
+benchmark_selection_sort('mes')   
 
 
 benchmark_bubble_sort('fecha')
 benchmark_bubble_sort('descripcion')
 benchmark_bubble_sort('monto')
-benchmark_bubble_sort('mes')  
+benchmark_bubble_sort('mes') 

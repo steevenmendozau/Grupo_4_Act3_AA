@@ -1,12 +1,13 @@
-Bubble Sort,data/gastos_50.csv,fecha,7e-05,8.1e-05,0.000121
-Bubble Sort,data/gastos_100.csv,fecha,0.000278,0.000378,0.00077
-Bubble Sort,data/gastos_1000.csv,fecha,0.03049,0.035052,0.050979
-Bubble Sort,data/gastos_50.csv,descripcion,7e-05,8.1e-05,0.000121
-Bubble Sort,data/gastos_100.csv,descripcion,0.000255,0.000308,0.000479
-Bubble Sort,data/gastos_1000.csv,descripcion,0.028271,0.035613,0.060028
-Bubble Sort,data/gastos_50.csv,monto,6.3e-05,7.7e-05,0.000132
-Bubble Sort,data/gastos_100.csv,monto,0.000243,0.000327,0.000564
-Bubble Sort,data/gastos_1000.csv,monto,0.027,0.03347,0.054363
-Bubble Sort,data/gastos_50.csv,mes,7.3e-05,8.5e-05,0.000129
-Bubble Sort,data/gastos_100.csv,mes,0.000283,0.000349,0.00049
-Bubble Sort,data/gastos_1000.csv,mes,0.029077,0.03661,0.053588
+algoritmo,archivo,criterio,minimo,promedio,maximo
+Selection Sort,data/gastos_50.csv,fecha,5.6e-05,5.8e-05,6.2e-05
+Selection Sort,data/gastos_100.csv,fecha,0.000207,0.000212,0.000221
+Selection Sort,data/gastos_1000.csv,fecha,0.024995,0.025249,0.025469
+Selection Sort,data/gastos_50.csv,descripcion,5.7e-05,5.8e-05,6e-05
+Selection Sort,data/gastos_100.csv,descripcion,0.000223,0.000227,0.000232
+Selection Sort,data/gastos_1000.csv,descripcion,0.027279,0.027588,0.027956
+Selection Sort,data/gastos_50.csv,monto,4.5e-05,4.7e-05,4.9e-05
+Selection Sort,data/gastos_100.csv,monto,0.000179,0.000188,0.000195
+Selection Sort,data/gastos_1000.csv,monto,0.022055,0.022641,0.023432
+Selection Sort,data/gastos_50.csv,mes,6.1e-05,6.4e-05,6.6e-05
+Selection Sort,data/gastos_100.csv,mes,0.000229,0.000234,0.000239
+Selection Sort,data/gastos_1000.csv,mes,0.026391,0.02661,0.026935

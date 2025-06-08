@@ -5,4 +5,3 @@ def bubbleSort(gastos, clave):
             if(gastos[j+1][clave] < gastos[j][clave]):
               gastos[j][clave], gastos[j+1][clave] = gastos[j+1][clave], gastos[j][clave]
     return gastos
-

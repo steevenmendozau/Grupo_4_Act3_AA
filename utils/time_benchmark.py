@@ -83,5 +83,3 @@ def benchmark_bubble_sort(clave):
         df.to_csv(output_file, mode='w', header=True, index=False)
 
     return resultados
-
-
